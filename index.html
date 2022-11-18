@@ -52,7 +52,7 @@
 				<li><a href="https://www.linkedin.com/in/huydu-tran/" class="icon brands fa-linkedin"><span
 							class="label">LinkedIn</span></a></li>
 				<li><a href="https://angel.co/u/huy-tran-46" class="icon brands fa-angellist"><span
-							class="label">Angellist</span></a></li>
+							class="label">Angelist</span></a></li>
 				<li><a href="https://github.com/htran106" class="icon brands fa-github"><span
 							class="label">Github</span></a></li>
 				<li><a href="mailto: hdt.cn106@gmail.com" class="icon solid fa-envelope"><span
@@ -131,28 +131,16 @@
 								</a>
 							</header>
 						</article>
-						<article onclick="window.open('github.com/htran106')" class="item calendar">
-							<!-- <a href="https://github.com/htran106" class="image fit"><img src="images/Github.png"
-									alt="" /></a> -->
+						<article class="item">
+							<a href="https://www.github.com/htran106" class="image fit">
+								<div class="calendar"></div>
+							</a>
 							<header>
 								<a href="https://github.com/htran106">
 									<h3>Github</h3>
 								</a>
 							</header>
 						</article>
-						<script>
-							GitHubCalendar(".calendar", "htran106");
-
-							// or enable responsive functionality:
-							// GitHubCalendar(".calendar", "htran106", { responsive: true });
-
-							// Use a proxy
-							GitHubCalendar(".calendar", "htran106", {
-								proxy(username) {
-									return fetch(`https://your-proxy.com/github?user=${username}`)
-								}
-							}).then(r => r.text())
-						</script>
 					</div>
 					<div class="col-4 col-12-mobile">
 						<article class="item">
@@ -164,13 +152,6 @@
 								</a>
 							</header>
 						</article>
-						<!-- <article class="item">
-							<a href="https://instapix-project.herokuapp.com" class="image fit"><img
-									src="images/instapix-screenshot.png" alt="" /></a>
-							<header>
-								<h3>Instapix</h3>
-							</header>
-						</article> -->
 						<article class="item">
 							<a href="https://www.codewars.com/users/dtrann" class="image fit"><img
 									src="images/codewars screenshot.png" alt="" />
@@ -186,6 +167,13 @@
 
 			</div>
 		</section>
+		<!-- <div class="calendar">
+			Github
+		</div> -->
+		<script>
+			GitHubCalendar(".calendar", "htran106", { responsive: true });
+		</script>
+
 
 		<!-- About Me -->
 		<section id="about" class="three">
